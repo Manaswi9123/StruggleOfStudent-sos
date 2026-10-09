@@ -1,0 +1,12 @@
+# This file only exists so `uv` can manage the project's virtual environment.
+# The website itself is 100% React + JavaScript (no Python, no backend).
+# `nodeenv` installs Node.js *inside* .venv, so the whole toolchain stays isolated.
+[project]
+name = "ss-website-env"
+version = "0.1.0"
+description = "Isolated uv-managed environment for the SS React frontend"
+requires-python = ">=3.10"
+dependencies = ["nodeenv>=1.9"]
+
+[tool.uv]
+package = false
